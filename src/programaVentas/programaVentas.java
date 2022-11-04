@@ -11,7 +11,7 @@ public class programaVentas {
         int nv = Integer.parseInt(numerodeventas);
         int total = 0;
         byte contadorventas =1;
-        for (int i = 0; i < nv; i++) {
+        for (byte i = 0; i < nv; i++) {
             System.out.println("Introduzca el valor de la venta nº "+contadorventas);
             String sumadeventas = br.readLine();
             int sv = Integer.parseInt(sumadeventas);
