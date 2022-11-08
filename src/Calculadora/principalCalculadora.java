@@ -6,7 +6,7 @@ public class principalCalculadora {
     public static void main(String[] args) throws IOException {
 
         claseCalculadora cc = new claseCalculadora();
-        cc.decidir();
+        cc.calcular();
     }
 
     }

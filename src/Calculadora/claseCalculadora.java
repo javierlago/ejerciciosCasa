@@ -43,7 +43,7 @@ public class claseCalculadora {
     public void multiplicacion(){
         System.out.println(resultado=numero1*numero2);
     }
-    public void decidir()throws IOException {
+    public void calcular()throws IOException {
 
 
         do {
@@ -66,7 +66,7 @@ public class claseCalculadora {
 
     }
     public void question()throws IOException{
-        System.out.print("desea realizar otra operacion s/n");
+        System.out.print("Desea realizar otra operacion s/n?");
         String siono = br.readLine();
         repetir = true;
         switch (siono) {
@@ -76,8 +76,7 @@ public class claseCalculadora {
                 repetir = false;
                 break;
             default:
-                System.err.println("Deber responder s/n");
-                repetir=false;
+                System.err.println("\nDebe responder s/n");
                 question();
         }
 
