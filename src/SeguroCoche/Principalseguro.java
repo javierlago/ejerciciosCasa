@@ -8,6 +8,6 @@ public class Principalseguro {
         Seguro s = new Seguro();
         s.pedirTeclado();
         s.seguro();
-        System.out.print(s.TARIFA);
+
     }
 }
