@@ -79,7 +79,14 @@ public class vehiculo {
 
 
 
-    public vehiculo(String modelo) {
+    public vehiculo(String modelo,String marca,String color,String comb, int cilindrada, int matricula,int diamatriculacion) {
+        this.modelo=modelo;
+        this.marca=marca;
+        this.color=color;
+        this.combustible=comb;
+        this.cilindrada=cilindrada;
+        this.matricula=matricula;
+        this.diamatriculacion=diamatriculacion;
     }
 
     public vehiculo() {
@@ -96,7 +103,7 @@ public class vehiculo {
 
     }
     public void teclado(){
-        System.out.print();
+        System.out.print("");
 
 
 
