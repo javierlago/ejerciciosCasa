@@ -6,28 +6,32 @@ import java.io.InputStreamReader;
 
 public class decirprimos {
     public static void main(String[] args) throws IOException {
-        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Introducir numero");
-        String num = br.readLine();
-        int nn = Integer.parseInt(num);
-        int contador = 0;
-        np(nn);
-        if(np(nn)==true){
-            contador++;
 
-        }
-        System.out.println(contador);
-
-
-
-
-
+        contar();
 
     }
+    public static void contar()throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int numero;
+        int contadorPrimos=0;
+        do{System.out.println("Introducir numero");
+            String numeroooo = br.readLine();
+            numero = Integer.parseInt(numeroooo);
+            if(numero<0){
+                System.out.println("Debes introducir un numero positivc");
+            }
+        }while(numero<0);
 
+        for(int i=numero;i>0;i--){
+            if(np(i)){
+                System.out.print(i+ "es primo\n");
+                contadorPrimos++;
+            }
 
+        }
+    }
     public static boolean np(int nn) {
-        int
+        int contadorPrimos = 0;
         boolean primo= true;
         int c=nn-1;
         while(primo && c>1){ // for(int c=numero-1;primo && c>1;c--)
@@ -35,13 +39,8 @@ public class decirprimos {
                 primo=false;
             }
             c--;
-
         }
         return primo;
-
-
-
-
     }
 }
 
