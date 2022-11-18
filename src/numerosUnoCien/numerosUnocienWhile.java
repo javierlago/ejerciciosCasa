@@ -1,7 +1,5 @@
 package numerosUnoCien;
 
-import ejercicioWhile.While;
-
 public class numerosUnocienWhile {
     public static void main(String[] args){
         byte numero=0;
