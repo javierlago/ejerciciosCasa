@@ -15,14 +15,15 @@ public class cajaFuerte {
             System.out.println("Introducir el numero secreto");
             String numerosecreto= br.readLine();
             numerointroducido=Integer.parseInt(numerosecreto);
-            if(!cuatrodigitos(numerointroducido)){
+                if (numerointroducido == numerocaja) {acierto=true;
+                }
+                if(!cuatrodigitos(numerointroducido)){
                 System.out.println("El numero debe contener solo 4 digitos");
             }
           }while(!cuatrodigitos(numerointroducido));
 
 
-            if(numerocaja==numerointroducido){
-                acierto=true;}
+
             oportunidades--;
 
         }
