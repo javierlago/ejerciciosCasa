@@ -7,5 +7,5 @@ public  class Mismetodos {
     public static boolean espar (int n){
         return n % 2 == 0;
     }
-    public static boolean espositivo(int n){return n >= 0;}
+    public static boolean espositivo(int n){return n >= 0;}gity
 }
