@@ -11,7 +11,7 @@ public  class Mismetodos {
     public static boolean espar (int n){
         return n % 2 == 0;
     }
-    public static boolean espositivo(int n){return n >= 0;}
+    public static boolean espositivo(int n){return n > 0;}
     public static int pedirNumero()throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Introduzca numero");
@@ -62,7 +62,11 @@ public  class Mismetodos {
         return repetir;
     }
 
+public static String Imprime(String frase){
+        System.out.println(frase);
 
+    return frase;
+}
 
 
 
