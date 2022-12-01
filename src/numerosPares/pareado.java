@@ -14,23 +14,30 @@ public class pareado {
 
 
     public static void main(String[] args)throws IOException {
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int numero1;
         int numero2;
-        int contador=0;
+        int contador = 0;
         int i;
-        System.out.println("introducir primer numero");
+        do {
+
+        numero1 = Mismetodos.pedirNumero();
+        numero2 = Mismetodos.pedirNumero();
+       /* System.out.println("introducir primer numero");
         String num =br.readLine();
-        numero1=Integer.parseInt(num);
-        System.out.println("introducir segundo numero");
-        String num2 =br.readLine();
-        numero2=Integer.parseInt(num2);
-        for(i=numero1; i<=numero2; i++){
-            if(Mismetodos.espar(i)){
-                System.out.print(i+"\n");
-               contador++;
+        numero1=Integer.parseInt(num);*/
+        /*System.out.println("introducir segundo numero");
+        String num2 =br.readLine()*/
+        ;
+
+        for (i = numero1; i <= numero2; i++) {
+            if (Mismetodos.espar(i)) {
+                System.out.print(i + "\n");
+                contador++;
             }
         }
+        /*Mismetodos.repetirproceso()*/;
+    }while(Mismetodos.repetirproceso());
         System.out.print("El total de numeros pares "+contador);
     }
 }

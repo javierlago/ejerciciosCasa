@@ -20,9 +20,10 @@ public class cuestioonario {
                 break;
             case "n":
                 n++;
-                break;
+
             case "NsNc":
                 NsNc++;
+                break;
             default:
                 System.err.println("Debe de introducir un  valor valido");
 
