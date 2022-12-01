@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class vehiculo {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    private String modelo;
+    private static String modelo;
     private String marca;
     private String color;
     private String combustible;

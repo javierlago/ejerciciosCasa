@@ -1,5 +1,7 @@
 package ejercicioVehiculo;
 
+import Metodos.Mismetodos;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,6 +10,12 @@ public class mainVehiculo {
 
 
     public static void main(String[] args)throws IOException {
+
+        vehiculo coche11 = new vehiculo();
+        coche11.setModelo("sdadfasdf");
+        Mismetodos.Imprime(coche11.getModelo());
+
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("mmodelo?");
         String mod= br.readLine();

@@ -7,11 +7,23 @@ import java.io.InputStreamReader;
 public  class Mismetodos {
 
 
+   public Mismetodos(){
+
+   }
+
+
+
+
+
+
+
+
+
 
     public static boolean espar (int n){
         return n % 2 == 0;
     }
-    public static boolean espositivo(int n){return n >= 0;}
+    public static boolean espositivo(int n){return n > 0;}
     public static int pedirNumero()throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Introduzca numero");
@@ -21,7 +33,7 @@ public  class Mismetodos {
 
     public static void responder(String reps) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Desea repetir la operacion");
+        Mismetodos.Imprime("Desea repetir la operacion");
 
         reps = br.readLine();
         if ((reps != "S") || reps!="s"){
@@ -38,7 +50,7 @@ public  class Mismetodos {
         boolean repetirpregunta=false;
         do {
 
-        System.out.println("Desea repetir la operacion");
+            Mismetodos.Imprime("Desea repetir la operacion");
         String resp = br.readLine();
         switch (resp) {
             case "s":
@@ -62,9 +74,12 @@ public  class Mismetodos {
         return repetir;
     }
 
+public static String Imprime(String frase){
+        System.out.println(frase);
 
-
-
+    return frase;
+}
 
 
 }
+
